@@ -1,0 +1,29 @@
+// _shame.scss
+// 14 dec 2016, wednesday
+
+// Debug
+.outline {
+    border: 1px solid red;
+    }
+
+// Image container
+.img-container {
+    @extend %mediaspacing;
+    img {
+        border-radius: $borderradius;
+        width: 100%;
+        }
+    }
+
+// blue background
+header {
+    margin-bottom: $banner-margin;    // 80px
+    }
+
+.homepage--image {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    }
+.homepage--image img {
+    width: 100%;
+    }

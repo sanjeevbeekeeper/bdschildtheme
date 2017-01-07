@@ -1,0 +1,167 @@
+// _navbar.scss
+// 20 dec 2016
+
+/*	NOTES
+.current-menu-item a 		: is for the default selection of the navmenu
+.current_page_parent a 		: for parent 'Blog' which sub-page gets selected
+.current-parent-ancestor a 	: select the parent when clild gets selected
+.current_page_item a 		: select the children
+*/
+
+// Menu selection for header navmenu
+.header-navmenu {
+	.current-menu-item a,
+	.current_page_parent a,
+	.current-page-ancestor a {
+		@extend %navbar-hover;
+		}
+
+	// for children for the service page
+	}
+	.current_page_item a {
+		background-color: $secondary-color;
+	}
+
+.nav > li > a {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+
+// Navbar Brand
+.navbar {
+	border: 0px;
+	border-radius: 0px;
+	min-height: 100px;
+	padding: 20px 0;
+	margin-bottom: 80px;
+	> .container-fluid {
+		.navbar-brand {
+			margin-top: 20px;
+			margin-bottom: 20px;
+            margin-left: 10px;
+			@media (max-width: $lg) {
+				margin-left: 0px;
+				}
+			@media (max-width: $md) {
+				margin-left: -15px;
+				}
+			@media (max-width: $sm) {
+				margin-left: 20px;
+			}
+			}
+		}
+	&-default {
+		background-color: transparent;
+        .navbar-toggle {
+            border-radius: 3px;
+            border: none;
+            margin-top: 50px;
+            margin-right: 40px;
+			// border: 1px solid red;
+            .icon-bar {
+				background-color: white;
+                margin-bottom: 6px;
+                width: 26px;
+                &:last-child {
+                	margin-bottom: 0px;
+	                }
+                }
+			&:hover {
+				color: red;
+				background-color: transparent;
+				}
+            }
+		.navbar-nav {
+			margin-top: 20px;
+			.active > a {
+				color: inherit;
+				background-color: transparent;
+				&:hover {
+					color: inherit;
+					background-color: transparent;
+					}
+				}
+			 > li > a {
+				margin-top: 20px;
+				padding: 15px 20px;
+				margin-left: 10px;
+				color: inherit;
+				 &:hover,  {
+					@extend %navbar-hover;
+					}
+				@media (max-width: $md) {
+					margin-left: 0px;
+					padding: 15px 12px;
+					margin-right: 8px;
+					}
+				}
+			// talk to us button only
+			li:last-child {
+				text-transform: uppercase;
+				}
+			}
+			@media (max-width: $sm) {
+				.navbar-collapse {
+					border-color: transparent !important;
+					background-color: rgba(0,0,0, 0.2);
+					}
+				}
+			}
+
+	.navbar-right li .talk-to-us {
+		border: 1px solid white;
+		border-radius: 3px;
+		padding: 6px 12px;
+		margin-top: 28px;
+        margin-right: 20px;
+		@media (max-width: $lg) {
+			margin-right: 10px;
+			}
+		@media (max-width: $md) {
+			margin-right: -15px;
+			}
+		}
+	}
+
+// Menu selection for footer navmenu
+.footer-navmenu {
+	$border-size: 1px;
+	$border-style: solid;
+	$border-color: $primary-color;
+	.current_page_parent a, .current_page_item a, .current-menu-item a,	.current-page-ancestor a {
+		border-bottom: $border-size $border-style $border-color;
+		}
+
+	.current_page_item a {
+		background-color: transparent;
+		}
+
+	.footer-nav a {
+		display: inline-block;
+		color: $primary-color;
+		&:hover  {
+			border-bottom: $border-size $border-style $border-color;
+			background-color: transparent;
+			}
+		}
+	} // footer-navmenu
+.footer-navmenu-talk-to-us {
+	$border-size: 1px;
+	$border-style: solid;
+	$border-color: $secondary-color;
+	.current_page_parent a, .current_page_item a, .current-menu-item a,	.current-page-ancestor a {
+		border-bottom: $border-size $border-style $border-color;
+		}
+	.footer-nav a {
+		display: inline-block;
+		color: $primary-color;
+		&:hover  {
+			border-bottom: $border-size $border-style $border-color;
+			background-color: transparent;
+			}
+		}
+	}
+
+.footer-navmenu-talk-to-us a {
+    color: white !important;
+    }

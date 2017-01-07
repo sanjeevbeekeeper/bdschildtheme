@@ -1,0 +1,46 @@
+// _placeholders.scss
+// 21 dec 2016
+
+
+// top banner
+%mediaspacing {
+    margin-top: 60px;
+    margin-bottom: $banner-margin;
+    }
+
+// inputfield focus
+%focus-controls {
+    background-color: lighten($secondary-color, 15%);
+    box-shadow: none !important;
+    border: 1px solid $primary-color !important;
+    &::-webkit-input-placeholder {
+        color: transparent;
+        }
+    }
+
+// pagination for blog
+// _blog.scss
+%blog-nav-bothsides {
+    padding: 15px;
+    background-color: hsl(0,0%,98%);
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+    }
+
+%blog-nav-padding-both {
+    padding-right: 2px;
+    padding-left: 2px;
+    }
+
+%blog-nav-hover {
+    &:hover {
+        background-color: gainsboro;
+        }
+    }
+
+// _navbar.scss
+%navbar-hover {
+	color: inherit;
+	border-bottom: 3px solid $secondary-color;
+	}

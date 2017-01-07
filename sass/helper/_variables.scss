@@ -1,0 +1,45 @@
+// _variables.scss
+// 09th dec 2016
+
+////////// ----- COLOR THEME ----- //////////
+
+
+// 60-30-10 rule
+$primary-colorname: 'primary-color';
+$primary-color: #05b5f6; // dominent color
+
+// yellow
+$secondary-colorname: 'secondary-color';
+$secondary-color: #fffd9d; // subdominent color
+
+// gray
+$accent-colorname-one: 'accent-one';
+$accent-one: lighten(gainsboro, 10%); // accent color 1
+
+$accent-colorname-two: 'accent-two';
+$accent-two: #3a3a3a; // accent color 2
+// $accent-two: blue;    // accent color 2
+
+$link-colorname: 'link-color';
+$link-color: #3b85d4;    // link color
+
+
+////////// ----- COLOR THEME CLOSING ----- //////////
+
+// BORDER RADIUS
+$borderradius: 3px;
+
+// margin bottom for the top banner
+// this can also be used to remove when using the ribbon in the service
+$banner-margin: 120px;
+
+// LINE HEIGHT
+// Used on 'headings'
+// see '_typography.scss'
+$line-height_1-3: 1.3;
+// Used on the text inside the 'ribbon'
+// see '_ribbon.scss'
+$line-height_1-4: 1.4;
+// Used on 'base' (body paragraph)
+// see '_typography.scss'
+$line-height_1-7: 1.7;

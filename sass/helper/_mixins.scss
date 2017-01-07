@@ -1,0 +1,30 @@
+// _mixins
+// 09 dec 2016
+
+// font-weight
+@mixin fontweight($fweight) {
+	@if $fweight == "light" {
+		font-weight: 300;
+		}
+	@else if $fweight == "regular" {
+		font-weight: 400;
+		}
+	@else if $fweight == "medium" {
+		font-weight: 500;
+		}
+	@else {
+		font-weight: 700;
+		}
+	}
+
+@mixin fontsize($holder){
+    font-size: #{$holder}px;
+    line-height: #{$holder * 1.5}px;
+    }
+
+// tab-size for 'pre' element
+@mixin tab-size {
+	-moz-tab-size: 	4; 	/* Firefox 4+ */
+	-o-tab-size: 	4; 	/* Opera 11.5 & 12.1 only */
+	tab-size: 		4; 	/* Chrome 21+, Safari 6.1+, Opera 15+ */
+	}

@@ -1,0 +1,64 @@
+// _pre.scss
+// Author Beekeeper Design Studio
+// Oct 2016
+//
+
+h4 {
+    &.pre--title {
+        margin-top: 20px;
+        color: gray;
+        // @include fontweight(semibold);
+        letter-spacing: fontsize(.8);    // _functions.scss
+        font-size: 14px;
+        background-color: hsl(0, 0%, 94%);
+        border-bottom: 1px solid hsl(0, 0%, 86%);;
+        padding: 8px 10px;
+        margin-bottom: -20px;
+        }
+    // command line
+    &.dark {
+        padding: 8px 10px;
+        margin-bottom: -21px;
+        background-color: #1e2222;
+        border-radius: 2px 2px 0px 0px;
+        }
+    }
+
+
+pre {
+	background-color: hsl(0, 0%, 96%);
+	color: hsl(0, 0%, 50%);
+	border: 0px;
+	font-size: 14px;
+    border-radius: 0px 0px 3px 3px;
+	padding: 15px;
+	@include tab-size;    // _mixin.scss
+	margin-top: 20px;
+	margin-bottom: 20px;
+    // command line
+    &.dark {
+        background-color: #2b3838;
+        color: white;
+        }
+	}
+.folder {
+	border: 1px solid hsl(0, 0%, 80%);
+	background-color: hsl(0, 0%, 99%) !important;
+	}
+
+// Syntax color for the pre tag
+// _lists.scss
+@each $syntax-color in $syntax {
+	$n: index($syntax, $syntax-color);
+	.c#{$n} {
+		color: $syntax-color;
+		}
+	}
+// command line syntax colors
+// _lists.scss
+@each $cmd-color in $cmd {
+	$x: index($cmd, $cmd-color);
+	.z#{$x} {
+		color: $cmd-color;
+		}
+	}

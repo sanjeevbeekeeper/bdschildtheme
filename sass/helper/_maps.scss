@@ -1,0 +1,19 @@
+// _maps.scss
+// saturday, 10 dec 2016
+
+// fonts
+$fonts: (
+    base: (
+        family: ('Roboto', sans-serif),
+        size: 16px,
+        color: hsl(0, 0%, 30%)
+        )
+    );
+
+// alerts
+$alerts:(
+    success: #d8f6c4,
+    info: #dcf7fa,
+    warning: #fbf8dc,
+    danger: #f7e8e5
+    );

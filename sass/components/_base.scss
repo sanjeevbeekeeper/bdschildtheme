@@ -1,0 +1,51 @@
+// _base.scss
+// 31 dec 2016
+
+html {
+    position: relative;
+    min-height: 100%;
+    }
+
+body {
+    margin-bottom: 300px; /* bottom = footer height */
+    }
+
+// list reset
+.listreset {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    }
+
+// helper
+.nogutter {
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+
+// Google map
+.bds_map {
+    border: 1px solid gainsboro;
+    line-height: 0; // this removes the gap below the map
+    @extend %mediaspacing;
+    }
+
+// Modal window
+.modal {
+    position: fixed;
+    top: 20% !important;
+    .modal-dialog {
+        .modal-body {
+            @include fontweight(medium);
+            font-size: fontsize(60);
+            @media (max-width: $sm) {
+                font-size: fontsize(40);
+                }
+            }
+        }
+    }
+
+mark {
+    font-family: monospace;
+    color: rgb(82, 111, 42);
+    }

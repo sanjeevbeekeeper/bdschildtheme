@@ -1,0 +1,16 @@
+// _list.scss
+// 15 dec 2016, thursday
+
+ol {
+    counter-reset: item;
+    & > li {
+        counter-increment: item;
+        ol & {
+            display: block;
+            &:before {
+                letter-spacing: .6px;
+                content: counters(item, ".") ". ";
+                }
+            }
+        }
+    }

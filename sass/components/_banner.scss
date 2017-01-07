@@ -1,0 +1,46 @@
+// _banners.scss
+// 14 dec 2016, wednesday
+
+// homepage banner
+.banner {
+    margin-bottom: $banner-margin;    // 80px
+    }
+
+.banner-container {
+    $fragments: darkgray;
+    padding: 30px;
+    .btn {
+        margin-bottom: 10px;
+        }
+    .banner-text {
+        font-size: map-get(map-get($fonts, base), size) + 6;
+        line-height: $line-height_1-4;
+        letter-spacing: .3px;
+        margin-bottom: 24px;
+        }
+    .banner-quote {
+        @include fontsize(21); // fontsize + lineheight
+        margin-bottom: 20px;
+        &:before {
+            color: $fragments;
+            content: open-quote;
+            }
+        &:after {
+            color: $fragments;
+            content: close-quote;
+            }
+        }
+    .banner-source {
+        color: $fragments;
+        font-style: italic;
+        font-size: map-get(map-get($fonts, base), size) + 2;
+        &:before {
+            color: $fragments;
+            content: '-- ';
+            }
+        &:after {
+            color: $fragments;
+            content: ' --';
+            }
+        }
+    }

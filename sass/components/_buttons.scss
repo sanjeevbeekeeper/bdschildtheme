@@ -1,0 +1,143 @@
+// _buttons.scss
+// 13 dec 2016, tuesday
+
+// default
+$btn-default: hsl(0, 0%, 60%);
+$btn-default-hover: lighten($btn-default, 35%);
+
+// info
+$btn-info: #86d5ec;
+$btn-info-hover: darken($btn-info, 15%);
+
+// primary
+$btn-primary: #5aa9ec;
+$btn-primary-hover: darken($btn-primary, 15%);
+
+// success
+$btn-success: #6bc564;
+$btn-success-hover: darken($btn-success, 15%);
+
+// warning
+$btn-warning: #edd93b;
+$btn-warning-hover: darken($btn-warning, 10%);
+
+// danger
+$btn-danger: #e66c6c;
+$btn-danger-hover: darken($btn-danger, 5%);
+
+
+.btn {
+    border-radius: $borderradius;
+    &-default {
+        color: darken($btn-default, 20%);
+        border-color: $btn-default;
+        &:hover {
+            background-color: $btn-default-hover;
+            }
+        &-outline {
+            border: 1px solid $btn-default;
+            }
+        }
+    &-primary {
+        border: 0;
+        background-color: $btn-primary;
+        &:hover {
+            background-color: $btn-primary-hover;
+            }
+        }
+    &-info {
+        border: 0;
+        background-color: $btn-info;
+        &:hover {
+            background-color: $btn-info-hover;
+            }
+        }
+    &-success {
+        border: 0;
+        background-color: $btn-success;
+        &:hover {
+            background-color: $btn-success-hover;
+            }
+        }
+    &-warning {
+        border: 0;
+        background-color: $btn-warning;
+        &:hover {
+            background-color: $btn-warning-hover;
+            }
+        }
+    &-danger {
+        border: 0;
+        background-color: $btn-danger;
+        &:hover {
+            background-color: $btn-danger-hover;
+            }
+        }
+    }
+
+// Outline buttons
+.btn-outline {
+    padding: 5px 10px;
+    }
+
+// primary
+.btn-default-outline {
+    border: 1px solid darken($btn-default, 40%);
+    color: darken($btn-default, 40%);
+    &:hover {
+        // color: darken($btn-default-hover, 40%);
+        }
+    }
+
+// primary
+.btn-primary-outline {
+    border: 1px solid $btn-primary;
+    color: $btn-primary;
+    &:hover {
+        color: $btn-primary-hover;
+        }
+    }
+
+// info
+.btn-info-outline {
+    border: 1px solid $btn-info;
+    color: $btn-info;
+    &:hover {
+        color: $btn-info-hover;
+        }
+    }
+
+// success
+.btn-success-outline {
+    border: 1px solid $btn-success;
+    color: $btn-success;
+    &:hover {
+        color: $btn-success-hover;
+        }
+    }
+
+// warning
+.btn-warning-outline {
+    border: 1px solid $btn-warning;
+    color: $btn-warning;
+    &:hover {
+        color: $btn-warning-hover;
+        }
+    }
+
+// dagner
+.btn-danger-outline {
+    border: 1px solid $btn-danger;
+    color: $btn-danger;
+    &:hover {
+        color: darken($btn-danger-hover, 20%);
+        border-color:darken($btn-danger-hover, 20%);
+        }
+    }
+
+// Custom button
+// Used inside the banner for talk to us button
+.btn-secondary {
+    background-color: $secondary-color;
+    color: darken($secondary-color, 50%);
+    }

@@ -1,0 +1,22 @@
+// _alerts.scss
+// 16 dec 2016
+
+.alert {
+    border: 0px;
+    padding: 10px 20px;
+    font-size: 90%;
+    &-dismissible {
+        .close {
+            top: 1px;
+            right: -5px;
+            }
+        }
+    }
+
+// _maps.scss
+// alert-info, alet-warning...
+@each $name, $color in $alerts{
+    .alert-#{$name} {
+        background-color: $color;
+        }
+    }

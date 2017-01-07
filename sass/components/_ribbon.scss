@@ -1,0 +1,55 @@
+// _ribbon.scss
+// 14 dec 2016, wednesday
+
+$ribbon-padding: 16px;
+
+.ribbon-container {
+
+    margin-top: -#{$banner-margin};
+    margin-bottom: $banner-margin - 50px;
+    padding: $ribbon-padding 0;
+    text-align: center;
+    // border: 1px solid gray;
+     ul li {
+        a {
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 10px;
+            &:hover {
+                border-radius: $borderradius;
+                background-color: $secondary-color;
+                }
+            }
+        @media (min-width: $sm) {
+            display: inline-block;
+            }
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+            display: block;
+            &:last-child {
+                margin-bottom: 0px;
+                }
+            }
+        @media (min-width: $sm) {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0px;
+                }
+            }
+        @media (min-width: $md) {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0px;
+                }
+            }
+        .active {
+            border-radius: $borderradius;
+            background-color: $secondary-color;
+            }
+        } // li
+    }
+
+.ribbon-servicepage {
+    padding: $ribbon-padding - 7  0px;
+    }

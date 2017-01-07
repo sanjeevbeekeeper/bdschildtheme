@@ -1,0 +1,57 @@
+// _typography.scss
+// 10th dec 2016, saturday
+
+// see _maps.scss
+body {
+	font-family: map-get(map-get($fonts, base), family); // Roboto
+	font-size: map-get(map-get($fonts, base), size); // 16px
+	line-height: $line-height_1-7; // 1.7
+	color: $accent-two;	// dark grey
+	letter-spacing: .2px;
+	}
+
+// href
+a {
+	color: $link-color;
+	text-decoration: none !important;
+	&:hover {
+		background-color: $secondary-color;
+		}
+	}
+
+// Headings
+h1, h2, h3 {
+	line-height: $line-height_1-3;
+	}
+
+// help block used under the radio button inside the talk to us tab
+.help-block {
+	margin-top: 5px;
+	font-style: italic;
+	color: lighten(gray, 20%);
+	}
+
+.primary-color {
+    background-color: $primary-color;
+    color: #fff;
+    }
+
+.secondary-color {
+    background-color: $secondary-color;
+    }
+
+.accent-one {
+	color: darken($accent-one, 45%);
+    background-color: $accent-one;
+	&-nobg {
+		color: darken($accent-one, 45%);
+		}
+    }
+
+.accent-two {
+    background-color: $accent-two;
+    }
+
+.link-color {
+    background-color: $link-color;
+    }

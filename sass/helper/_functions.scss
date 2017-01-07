@@ -1,0 +1,7 @@
+// _functions.scss
+// 20 dec 2016
+
+// Pixel to Em conversion
+@function fontsize($pixels, $context: 16) {
+    @return #{$pixels/$context}em
+    }

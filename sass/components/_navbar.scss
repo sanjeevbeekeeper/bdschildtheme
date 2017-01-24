@@ -68,7 +68,7 @@
                 }
 			&:hover {
 				color: red;
-				background-color: transparent;
+				background-color: $primary-color;
 				}
             }
 		.navbar-nav {
@@ -77,8 +77,8 @@
 				color: inherit;
 				background-color: transparent;
 				&:hover {
-					color: inherit;
-					background-color: transparent;
+					color: #fff;
+					background-color: $primary-color;
 					}
 				}
 			 > li > a {
@@ -86,8 +86,8 @@
 				padding: 15px 20px;
 				margin-left: 10px;
 				color: inherit;
-				 &:hover,  {
-					@extend %navbar-hover;
+				 &:hover, &:active, &:link, &:focus {
+					 color: #fff;
 					}
 				@media (max-width: $md) {
 					margin-left: 0px;
@@ -140,8 +140,7 @@
 		display: inline-block;
 		color: $primary-color;
 		&:hover  {
-			border-bottom: $border-size $border-style $border-color;
-			background-color: transparent;
+			background-color: #fff;
 			}
 		}
 	} // footer-navmenu
@@ -155,8 +154,8 @@
 	.footer-nav a {
 		display: inline-block;
 		color: $primary-color;
-		&:hover  {
-			border-bottom: $border-size $border-style $border-color;
+		&:hover, &:visited, &:link, &:focus  {
+			color: red;
 			background-color: transparent;
 			}
 		}

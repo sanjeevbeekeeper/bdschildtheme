@@ -7,7 +7,6 @@ body {
 	font-size: map-get(map-get($fonts, base), size); // 17px
 	line-height: $line-height_1-7; // 1.7
 	color: $accent-two;	// dark grey
-	letter-spacing: .2px;
 	}
 
 // href

@@ -22,3 +22,13 @@
             }
         }
     }
+
+// Image displayed in the Service pages
+.homepage--image {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    & img {
+        margin-right: auto;
+        margin-left: auto;
+        }
+    }

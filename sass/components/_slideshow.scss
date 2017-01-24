@@ -1,0 +1,18 @@
+// _slideshow.scss
+// 24 jan 2017
+
+#slideshow {
+    position: relative;
+    display: block;
+    & > .slide:first-child {
+        position: relative;
+        }
+    & > .slide {
+        margin: 0 auto;
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        }
+    }
